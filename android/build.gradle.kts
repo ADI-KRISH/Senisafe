@@ -3,7 +3,12 @@ allprojects {
         google()
         mavenCentral()
     }
+
 }
+android {
+    ndkVersion '27.0.12077973';
+}
+
 
 val newBuildDir: Directory = rootProject.layout.buildDirectory.dir("../../build").get()
 rootProject.layout.buildDirectory.value(newBuildDir)
